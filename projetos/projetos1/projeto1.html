@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+        nav {
+            background-image: radial-gradient(circle, #ff838e, #cd7077, #9c5d61, #6e4b4c, #423838);
+
+        }
+
+        button {
+            background-color: #cd7077 !important;
+            border: none !important;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!--PAGINA 1-->
+    <div style="min-height: 100vh;">
+        <header style="min-height: 10vh;">
+            <nav class="navbar bg-body-tertiary" style="height: 10vh;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="images/oboticario.png" alt="Logo" width="303px" height="60vh"
+                            class="d-inline-block align-text-top">
+                        O´boticário
+                    </a>
+                </div>
+            </nav>
+
+        </header>
+
+        <main>
+            <!--PAGINA 1-->
+            <section style="min-height: 90vh; background-color: rgb(236, 152, 41);background-image: url(images/lavie.jpg);
+            background-size: cover;background-position: center; background-repeat: no-repeat;
+            display: flex; flex-direction: column; align-items: center; justify-content: center;">
+                <h3 style="color:#d7807c">Seja uma mulher cheirosa e maravilhosa nessa estação!</h3>
+                <h1 style="color:rgba(92, 105, 117)">novas fragrâncias estão no catálogo!</h1>
+                <a href="#pg2">
+                    <button id="btnpg1" type="button" class="btn btn-primary"
+                        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                        Clique para conferir!
+                    </button>
+                </a>
+
+            </section>
+            <!--PAGINA 2-->
+            <section id="pg2" style="min-height: 100vh; background-color: darkmagenta;">
+                <div class="container-fluid">
+                    <div class="row" style="min-height: 100vh;">
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-color: antiquewhite;">
+                            <h1>encontre vendedoras</h1>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Accordion Item #1
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            first item’s accordion body.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Accordion Item #2
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            second item’s accordion body. Let’s imagine this being filled with some
+                                            actual content.</div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Accordion Item #3
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the <code>.accordion-flush</code> class. This is the
+                                            third item’s accordion body. Nothing more exciting happening here in terms
+                                            of content, but just filling up the space to make it look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center"
+                            style="background-color: rgb(95, 64, 22);"></div>
+                    </div>
+                </div>
+
+            </section>
+            <!--PAGINA 3-->
+            <section style="min-height: 100vh; background-color:aqua;">
+
+
+            </section>
+
+
+
+
+
+        </main>
+
+        <footer class="mt-auto" style="min-height: 10vh; background-color: rgb(45, 194, 144);">
+
+        </footer>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
